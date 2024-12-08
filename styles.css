@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3c3631;
+    color: #e2e0de;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #ff6b35;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+    color: #ff8c61;
+}
+
+.menu-icon {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-button.active .menu-icon {
+    transform: rotate(90deg);
+}
+
+.menu-text {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ff8c61;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 16px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b6b6b;
+}
+
+/* Hero Section Styles */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 48px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.order-button, .video-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.order-button {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.video-button {
+    background: color(srgb  rgb(247, 247, 250));
+    border: 1px solid white;
+    color: hsl(0, 0%, 100%);
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration:solid;
+}
+
+/* Food Cards Styles */
+.food-cards {
+    display: grid;
+    gap: 32px;
+}
+
+.food-card {
+    background-color: #2a2420;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.food-card h3 {
+    color: #ff6b35;
+    margin-bottom: 8px;
+}
+
+.rating {
+    color: #ff6b35;
+    margin-bottom: 8px;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff6b35;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #3c3631;
+        padding: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+

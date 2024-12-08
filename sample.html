@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Restaurant & Delicious Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <button id="menuButton" class="menu-button" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+                <span class="menu-text">Menu</span>
+            </button>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">ABOUT</a>
+                <a href="#" class="nav-link">SERVICE</a>
+                <a href="#" class="nav-link">HELP</a>
+            </div>
+
+            <div class="search-container">
+                <input type="search" placeholder="Search..." class="search-input">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <main>
+            <div class="hero-content">
+                <h1>Discover Restaurant & Delicious Food</h1>
+                <p>"Experience unforgettable flavors and great ambiance at Discover Restaurant, where every dish is crafted to delight."</p>
+                <div class="cta-buttons">
+                    <button class="order-button">ORDER NOW</button>
+                    <button class="video-button">
+                        <a href="https://www.youtube.com/watch?v=BWYUTRynC-E" class="video-link">SEE VIDEO </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-cards">
+                <div class="food-card">
+                    <img src="food_1.jpg" alt="Delicious dinner spread" class="food-image">
+                    <h3>BARBEQUE</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum augue, tincidunt</p>
+                </div>
+
+                <div class="food-card">
+                    <img src="food_2.jpg" alt="Colorful dish with dips" class="food-image">
+                    <h3>HEALTHY FOOD</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum augue, tincidunt</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.537 19.567c-1.345-.595-2.535-1.464-3.526-2.555-1.036-1.142-1.457-2.523-1.457-3.92h-3.108c0 1.397-.422 2.778-1.458 3.92-.991 1.091-2.181 1.96-3.526 2.555-.632.28-1.043.912-1.043 1.61v1.223c0 .33.27.6.6.6h13.961c.33 0 .6-.27.6-.6v-1.223c0-.698-.411-1.33-1.043-1.61zm-6.091-7.475c2.146 0 3.889-1.743 3.889-3.889s-1.743-3.889-3.889-3.889-3.889 1.743-3.889 3.889 1.743 3.889 3.889 3.889z" />
+                </svg>
+                <span>VASQUEZ INC.</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
